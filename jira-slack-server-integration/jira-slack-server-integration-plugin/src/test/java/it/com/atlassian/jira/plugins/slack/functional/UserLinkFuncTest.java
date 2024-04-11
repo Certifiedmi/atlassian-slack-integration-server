@@ -7,7 +7,6 @@ import org.junit.Before;
 import org.junit.Test;
 
 import static com.atlassian.plugins.slack.test.TestTeams.DUMMY_TEAM_ID;
-import static it.com.atlassian.jira.plugins.slack.functional.SanityCheckFuncTest.LICENCE_FOR_TESTING;
 import static it.com.atlassian.jira.plugins.slack.util.JiraFuncTestData.SAMPLE_DATA;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.is;
@@ -16,7 +15,7 @@ import static org.hamcrest.Matchers.is;
 public class UserLinkFuncTest extends SlackFunctionalTestBase {
     @Before
     public void beforeEach() {
-        backdoor.restoreDataFromResource(SAMPLE_DATA, LICENCE_FOR_TESTING);
+        backdoor.restoreDataFromResource(SAMPLE_DATA);
     }
 
     @Test

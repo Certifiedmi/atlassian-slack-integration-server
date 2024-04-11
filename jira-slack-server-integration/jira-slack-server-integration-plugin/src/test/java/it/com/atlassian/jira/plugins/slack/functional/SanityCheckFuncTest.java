@@ -27,7 +27,7 @@ public class SanityCheckFuncTest extends SlackFunctionalTestBase {
 
     @Before
     public void beforeEach() {
-        backdoor.restoreDataFromResource(SAMPLE_DATA, LICENCE_FOR_TESTING);
+        backdoor.restoreDataFromResource(SAMPLE_DATA);
     }
 
     @Test

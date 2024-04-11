@@ -12,7 +12,6 @@ import static com.atlassian.plugins.slack.test.RequestMatchers.request;
 import static com.atlassian.plugins.slack.test.RequestMatchers.requestEntityProperty;
 import static com.atlassian.plugins.slack.test.TestChannels.DIRECT;
 import static com.github.seratch.jslack.api.methods.Methods.CHAT_POST_MESSAGE;
-import static it.com.atlassian.jira.plugins.slack.functional.SanityCheckFuncTest.LICENCE_FOR_TESTING;
 import static it.com.atlassian.jira.plugins.slack.util.JiraFuncTestData.SAMPLE_DATA;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.allOf;
@@ -24,7 +23,7 @@ import static org.hamcrest.Matchers.is;
 public class WorkspaceLinkFuncTest extends SlackFunctionalTestBase {
     @Before
     public void beforeEach() {
-        backdoor.restoreDataFromResource(SAMPLE_DATA, LICENCE_FOR_TESTING);
+        backdoor.restoreDataFromResource(SAMPLE_DATA);
     }
 
     @Test
