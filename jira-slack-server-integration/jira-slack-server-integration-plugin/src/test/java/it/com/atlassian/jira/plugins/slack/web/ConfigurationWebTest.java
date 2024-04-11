@@ -44,7 +44,7 @@ public class ConfigurationWebTest extends SlackWebTestBase {
 
     @Before
     public void beforeEach() {
-        backdoor.restoreDataFromResource(SAMPLE_DATA, LICENCE_FOR_TESTING);
+        backdoor.restoreDataFromResource(SAMPLE_DATA);
         flakyWebTestKiller.disableJiraFlags();
         connectToDummyTeamAndConfirmAdminAccount();
     }
