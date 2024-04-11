@@ -10,10 +10,10 @@ import org.junit.Test;
 
 import java.util.List;
 
-import static com.atlassian.jira.testkit.client.util.TimeBombLicence.LICENCE_FOR_TESTING;
 import static com.atlassian.plugins.slack.test.RequestMatchers.hasHit;
 import static com.atlassian.plugins.slack.test.RequestMatchers.requestEntityProperty;
 import static com.github.seratch.jslack.api.methods.Methods.CHAT_UNFURL;
+import static it.com.atlassian.jira.plugins.slack.functional.SanityCheckFuncTest.LICENCE_FOR_TESTING;
 import static it.com.atlassian.jira.plugins.slack.util.JiraFuncTestData.SAMPLE_DATA;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.contains;

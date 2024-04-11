@@ -6,13 +6,13 @@ import it.com.atlassian.jira.plugins.slack.util.SlackFunctionalTestBase;
 import org.junit.Before;
 import org.junit.Test;
 
-import static com.atlassian.jira.testkit.client.util.TimeBombLicence.LICENCE_FOR_TESTING;
 import static com.atlassian.plugins.slack.test.RequestMatchers.body;
 import static com.atlassian.plugins.slack.test.RequestMatchers.hasHit;
 import static com.atlassian.plugins.slack.test.RequestMatchers.request;
 import static com.atlassian.plugins.slack.test.RequestMatchers.requestEntityProperty;
 import static com.atlassian.plugins.slack.test.TestChannels.DIRECT;
 import static com.github.seratch.jslack.api.methods.Methods.CHAT_POST_MESSAGE;
+import static it.com.atlassian.jira.plugins.slack.functional.SanityCheckFuncTest.LICENCE_FOR_TESTING;
 import static it.com.atlassian.jira.plugins.slack.util.JiraFuncTestData.SAMPLE_DATA;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.allOf;
